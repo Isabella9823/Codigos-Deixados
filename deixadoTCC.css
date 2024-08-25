@@ -48,3 +48,52 @@ body, html {
   }
 }
 
+/*teste certo*/
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Criar um efeito de paralaxe */
+.bgimg-1{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Primeira imagem (Logo. Altura total) */
+.bgimg-1 {
+  background-image: url('https://wallpapercave.com/wp/UAtM37k.jpg');
+  min-height: 100%;
+}
+
+.w3-bar.w3-bar-item{
+  color: white !important;
+}
+
+.button{
+  color:black !important ;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Desativar a rolagem de paralaxe para tablets e telefones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+/* Cor dos itens da barra de navegação quando a barra está no topo */
+.w3-bar .w3-bar-item {
+  color: white; /* Cor dos itens no topo */
+}
+
+/* Alterar a cor dos itens da barra de navegação quando rola a página */
+.w3-bar.w3-card.w3-animate-top .w3-bar-item {
+  color: black; /* Cor dos itens quando rola */
+}
