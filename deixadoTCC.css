@@ -107,6 +107,7 @@ body, html {
   box-sizing: border-box;
  
   }
+
   a {
     color:#215555;
   }
@@ -122,26 +123,9 @@ body, html {
     background-color:#f0f0f0;
   }
 
-  a {
-  text-decoration: none;
-  }
-
-  li {
-  list-style: none;
-  }
- 
- .logo{
-   font-size: 45px;
-   color:#f0f0f0;
-   
- }
-
- 
- 
- 
-
 .ab{
   color:#42a2a5;
+  font-size:25px;
   text-decoration-line: underline;
   
 }
