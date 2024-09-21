@@ -1,61 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="c2.css" media="screen" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <head>
-  <script src ="c2.js" defer></script>  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-  <link rel="icon" type="image/x-icon" href="totoroC.ico">
+      .image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/UAtM37k.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: #333;
+            z-index: 1000; /* Para garantir que a barra fique acima de outros elementos */
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .navbar .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a:not(:first-child) {display: none;}
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar.responsive {position: fixed; top: 0; width: 100%;} /* Mudança para fixed */
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .content {
+            padding: 16px;
+        }
+    </style>
 </head>
 <body>
 
+
 <div class="image">
-  <div class="barra" id="barrinha">
-     <a href="#home"><i class="fas fa-home"></i> HOME</a>
-     <a href="#news"><i class="fas fa-feather-alt"></i> HISTÓRIA</a>
-     <a href="#contact"><i class="fas fa-shopping-bag"></i> PRODUTOS</a>
-     <a href="#about"><i class="fas fa-map-marker-alt"></i> PARQUE TEMÁTICO</a>
-     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+<div class="navbar" id="myNavbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div>
-  <div class="text">
-    <h1 style="font-size:70px">STUDIO GHIBLI</h1>
-  </div>
 </div>
   
-  
-  
-  
-  <div class="texto">
-  <p>
-    <a class="ab" href="https://isabella9823.github.io/LayoutResponsivo/">Layout Responsivo</a> &nbsp;
-    <a class="ab" href="https://isabella9823.github.io/IntroducaoAoHTML/">Introdução ao HTML</a> &nbsp;  
-    <a class="ab" href="https://isabella9823.github.io/AtividadesExtrasDoSite/">Tabela</a> &nbsp; 
-    <a class="ab" href="https://isabella9823.github.io/ListadeTarefas/">Lista de Tarefas</a> &nbsp;
-    <a class="ab" href="https://isabella9823.github.io/Formulario/">Formulário</a>  
-  </p>
+<div class="content">
+    <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>More text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>Even more text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+  <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>More text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>Even more text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+  <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>More text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>Even more text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+  <h3>Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>More text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
+    <p>Even more text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo...</p>
 </div>
-<br>
-  
 
-    
-    
-  
-    
-   
-  <!--rodapé-->
-  
-<footer>
-  <button class="corb" onclick="topFunction()" title="Voltar">VOLTAR<i class='fas fa-arrow-up'></i>
-  </button>
-</footer>
+<script>
+    function toggleNavbar() {
+        var navbar = document.getElementById("myNavbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
 
-  
 </body>
 </html>
