@@ -1,15 +1,9 @@
-//barra
-function myFunction() {
-    var x = document.getElementById("barrinha");
-    if (x.className === "barra") {
-      x.className += " responsive";
-    } else {
-      x.className = "barra";
-    }
+function toggleNavbar() {
+  var navbar = document.getElementById("myNavbar");
+  if (navbar.className === "navbar") {
+      navbar.className += " responsive";
+  } else {
+      navbar.className = "navbar";
   }
-  
-  //radapé
-  function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+}
+
