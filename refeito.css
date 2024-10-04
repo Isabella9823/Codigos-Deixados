@@ -69,3 +69,26 @@ body {
   padding: 16px;
   margin-top: 60px; /* Espaço para não sobrepor a barra de navegação */
 }
+
+/*3 imagens*/
+
+.column-3ima {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.roow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column-3ima {
+    width: 100%;
+  }
+}
